@@ -1,7 +1,6 @@
 body {
-	color: blue;
+  font-size: 16px;
+  color: #fff;
+  background-color: #61122f;
+  font-family: 'Oxygen', sans-serif;
 }
-
-/* class md for desktop *
-/* class sm for tablet *
-/* class xs for mobile *
