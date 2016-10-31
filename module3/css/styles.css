@@ -27,7 +27,7 @@ body {
 }
 
 #nav-list a:hover {
-  background: pink;
+  background: #ffe6e6;
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
@@ -74,7 +74,7 @@ h3 {
 }
 
 #section-container a:hover {
-  background: pink;
+  background: #ffe6e6;
 }
 
 
