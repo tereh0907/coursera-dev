@@ -24,12 +24,10 @@ h2 {
 
 .section-container {  
   background-color: #0086b3;
-}
-#section1, #section2, #section3 {
-  text-align: center;
   border: 2px solid black;
   margin-bottom: 20px;
 }
-.section-container div {
-
+#section1, #section2, #section3 {
+  text-align: center; 
 }
+
