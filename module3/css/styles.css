@@ -20,6 +20,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   line-height: .75;
+  color: #61122f;
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
@@ -29,8 +30,13 @@ body {
   background: pink;
 }
 
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+
 h2 {
   margin-bottom: 50px;
+  font-weight: bold;
 }
 
 .main-content {
@@ -57,8 +63,12 @@ h2 {
 h3 { 
   padding-bottom: 20px;
   text-align: center;
+  font-weight: bold;
 }
 
+.section-container a {
+  font-weight: bold;
+}
 .section-container a:hover, .section-container a:focus {
   text-decoration: none;
 }
