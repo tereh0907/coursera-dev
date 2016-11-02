@@ -1,5 +1,4 @@
 body { 
- background-color: #20B2AA;
  font-family: "Oswald", Arial, sans-serif; 
  margin: 0;
  padding: 0; 
@@ -15,6 +14,7 @@ div {
  height: 500px; 
 }
 section {
+ background-color: #20B2AA;
  position: relative; 
  float: left;    
  width: 32%;
@@ -28,7 +28,6 @@ section {
  padding-top: 50px;
  margin-left: 1%; 
  overflow: auto;
-
 }
 h2 {
   color: brown;
@@ -51,14 +50,9 @@ h2 {
 #h2id3 {
   background-color: #E0FFFF;
 }
-#section1 { 
-}
-#section2 {
-}
 #section3 {
  margin-right: 1%;
 }
-
 @media (min-width: 768px) and (max-width: 991px) { 
  #section1, #section2 {   
    margin: 0;
