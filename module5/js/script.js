@@ -140,7 +140,7 @@ function buildAndShowHomeHTML (categories) {
       //
       // var homeHtmlToInsertIntoMainPage = ....
          var homeHtmlToInsertIntoMainPage = 
-             insertProperty(homeHtml, "randomCategoryShortName" , "'"+chosenCategoryShortName+"'");
+             insertProperty(homeHtml, "randomCategoryShortName", "'"+chosenCategoryShortName+"'");
 
       //    var homeHtmlToInsertIntoMainPage = 
       //        buildHomeViewHtml(chosenCategoryShortName,	
@@ -337,21 +337,21 @@ function buildMenuItemsViewHtml(categoryMenuItems,
 
 // Using chosenCategoryShortName and home snippets html - Tere
 // build home view HTML to be inserted into page - Tere
-  function buildHomeViewHtml(chosenCategoryShortName,
-                           homeHtmlUrl) {
-
-  var finalHtml = categoriesTitleHtml;
-  finalHtml += "<section class='row'>";
-  var html = homeHtmlUrl;
-  var randomCategoryShortName = chosenCategoryShortName.randomCategoryShortName;
-  html =
-      insertProperty(html,
-                     "randomCategoryShortName",
-                     randomCategoryShortName);
-  finalHtml += html;
-  finalHtml += "</section>";
-  return finalHtml;
-}
+//  function buildHomeViewHtml(chosenCategoryShortName,
+//                           homeHtmlUrl) {
+//
+//  var finalHtml = categoriesTitleHtml;
+//  finalHtml += "<section class='row'>";
+//  var html = homeHtmlUrl;
+//  var randomCategoryShortName = chosenCategoryShortName.randomCategoryShortName;
+//  html =
+//      insertProperty(html,
+//                     "randomCategoryShortName",
+//                     randomCategoryShortName);
+//  finalHtml += html;
+//  finalHtml += "</section>";
+//  return finalHtml;
+//}
   
 // Appends price with '$' if price exists
 function insertItemPrice(html,
