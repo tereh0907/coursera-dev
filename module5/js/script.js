@@ -331,7 +331,7 @@ function buildMenuItemsViewHtml(categoryMenuItems,
   var randomCategoryShortName = chosenCategoryShortName.randomCategoryShortName;
   html =
       insertProperty(html,
-                     " randomCategoryShortName ",
+                     "randomCategoryShortName",
                      randomCategoryShortName);
   finalHtml += html;
   finalHtml += "</section>";
