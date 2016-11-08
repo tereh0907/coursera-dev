@@ -91,6 +91,7 @@ showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   allCategoriesUrl,
   function buildAndShowHomeHTML (responseText) {
+    console.log(responseText);
      document.querySelector("#main-content")
         .innerHTML = responseText;
   },
