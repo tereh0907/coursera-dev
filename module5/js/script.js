@@ -125,12 +125,9 @@ function buildAndShowHomeHTML (categories) {
       // it into the home html snippet.
       //
       // var homeHtmlToInsertIntoMainPage = ....
-         var homeHtmlToInsertIntoMainPage = homeHtmlUrl;
-         homeHtmlToInsertIntoMainPage =
-             insertProperty(html,
-                          "randomCategoryShortName",
-                           randomCategoryShortName);
-
+         var homeHtmlToInsertIntoMainPage = 
+             buildHomeViewHtml(chosenCategoryShortName,	
+                               homeHtml);                
       // TODO: STEP 4: Insert the the produced HTML in STEP 3 into the main page
       // Use the existing insertHtml function for that purpose. Look through this code for an example
       // of how to do that.
@@ -141,7 +138,9 @@ function buildAndShowHomeHTML (categories) {
     false); // False here because we are getting just regular HTML from the server, so no need to process JSON.
 }
 
-
+// Tere
+  console.log("chosenCategoryShortName = " + chosenCategoryShortName);
+  
 // Given array of category objects, returns a random category object.
 function chooseRandomCategory (categories) {
   // Choose a random index into the array (from 0 inclusively until array length (exclusively))
@@ -321,7 +320,24 @@ function buildMenuItemsViewHtml(categoryMenuItems,
   return finalHtml;
 }
 
+// Using chosenCategoryShortName and home snippets html - Tere
+// build home view HTML to be inserted into page - Tere
+  function buildHomeViewHtml(chosenCategoryShortName,
+                           homeHtmlUrl) {
 
+  var finalHtml = categoriesTitleHtml;
+  finalHtml += "<section class='row'>";
+  var html = homeHtmlUrl;
+  var randomCategoryShortName = chosenCategoryShortName.randomCategoryShortName;
+  html =
+      insertProperty(html,
+                     " randomCategoryShortName ",
+                     randomCategoryShortName);
+  finalHtml += html;
+  finalHtml += "</section>";
+  return finalHtml;
+}
+  
 // Appends price with '$' if price exists
 function insertItemPrice(html,
                          pricePropName,
